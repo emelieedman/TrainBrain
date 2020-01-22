@@ -12,7 +12,7 @@ function TrainBrainAPI() {
   }
 
   myApiCall();
-  return "";
+  return ""
 }
 
 export default TrainBrainAPI;
