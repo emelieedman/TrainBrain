@@ -11,15 +11,15 @@ const TrainBrainAPI = () => {
   myData.then(data => {
     onChangeTimestamp(data.timestamp);
     const disruptions = data.disruptions.map(disruption => {
-      if (disruption.station === "Stockholm Central") {
+      if (disruption.station.station === "Stockholm Odenplan") {
         return (
           <div>
-            <h1>Delay</h1>
-            <p>{disruption.delaycount}</p>
+            <h1>Delay in Stockholm Odenplan latest 30 mins</h1>
+            <p>Delay count {disruption.delaycount}</p>
           </div>
         );
       } else {
-        return <h1>No delay</h1>;
+        console.log("hej");
       }
     });
     onChangeDisruptions(disruptions);
