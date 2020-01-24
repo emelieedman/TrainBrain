@@ -6,7 +6,7 @@ body {
 .meditation-component {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 45% 50%;
   background-color: #997aa5;
   color: white;
   font-family: "Saira", sans-serif;
@@ -30,7 +30,7 @@ body {
 }
 
 .meditation-item2 {
-  justify-self: center;
+  justify-self: left;
   align-self: center;
 }
 .meditation-item3 {
