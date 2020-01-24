@@ -12,7 +12,11 @@ const Greeter = () => {
   } else {
     timeOfDay = "night";
   }
-  return <h1 className="greeter-text">Good {timeOfDay} sunshine!</h1>;
+  return (
+    <h1 className="greeter-text">
+      Good {timeOfDay} <br></br> sunshine!
+    </h1>
+  );
 };
 
 export default Greeter;
