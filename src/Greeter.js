@@ -6,15 +6,15 @@ const Greeter = () => {
   let timeOfDay;
 
   if (hours < 12) {
-    timeOfDay = "morning";
+    timeOfDay = "MORNING";
   } else if (hours >= 12 && hours < 17) {
-    timeOfDay = "afternoon";
+    timeOfDay = "AFTERNOON";
   } else {
-    timeOfDay = "night";
+    timeOfDay = "NIGHT";
   }
   return (
     <h1 className="greeter-text">
-      Good {timeOfDay} <br></br> sunshine!
+      GOOD {timeOfDay} <br></br> SUNSHINE!
     </h1>
   );
 };
