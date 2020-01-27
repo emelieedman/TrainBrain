@@ -1,5 +1,4 @@
 
-
 const myApiCall = () => {
     return fetch("http://localhost:8080")
       .then(function(response) {
