@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Greeter from "./Greeter";
+import Greeter from "./components/Greeter/Greeter";
 
 function App() {
   return (
