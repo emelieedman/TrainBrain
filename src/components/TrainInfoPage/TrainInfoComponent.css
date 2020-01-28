@@ -19,7 +19,7 @@
   top: 150px;
   border-top-left-radius: 130px;
   background-color: #f18b66;
-  font-family: "Saira", sans-serif;
+  font-family: 'Saira', sans-serif;
 }
 
 .first-line {
@@ -42,6 +42,7 @@
   font-size: 24px;
   grid-column: span 2;
   letter-spacing: 0.5em;
+  font-weight: 200;
 }
 
 .station-line {
@@ -49,12 +50,16 @@
   align-self: center;
   font-size: 42px;
   grid-column: span 2;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  margin-bottom: -20px;
 }
 
 .time-line {
   justify-self: center;
   align-self: center;
-  font-size: 38px;
+  font-size: 42px;
   grid-column: span 2;
+  letter-spacing: 0.1em;
+  font-weight: 400;
 }
