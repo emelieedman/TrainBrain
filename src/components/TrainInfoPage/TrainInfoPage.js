@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { myApiCall } from "../../services/TrainInfoService";
+import "./TrainInfoComponent.css";
 
 
 const TrainBrainAPI = () => {
@@ -33,10 +34,21 @@ const TrainBrainAPI = () => {
  
 
   return (
-    <div>
-      <h1>Delays in Lund C latest 120 mins: </h1>
-      <p>{disruptions}</p>
-    </div>
+
+    <div className="info-component">
+    <img
+      className="location-icon"
+      id="way-icon"
+      src={require("./way.svg")}
+      alt=""
+    />
+    <h1 className="first-line">TRAVEL INFO</h1>
+    <h3 className="delays-line">DELAYS</h3>
+    <h1 className="station-line">LUND C</h1>
+  <h1 className="time-line">{disruptions}</h1>
+  </div>
+
+
   );
 };
 

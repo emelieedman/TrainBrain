@@ -8,8 +8,9 @@ function App() {
   return (
     <div>
       <Greeter />
-      <Meditation />
       <TrainInfoPage />
+      <Meditation />
+
     </div>
   );
 }
