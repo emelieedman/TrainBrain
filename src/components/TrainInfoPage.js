@@ -15,12 +15,19 @@ const TrainBrainAPI = () => {
     }
 
     myData.then(data => {
-      const newDisruptions = data.disruptions.map(disruption => {
-        if (disruption.station.station === "Lund C") {
-          return disruption.delaycount
+      
+      let displayDelay = function () {
+        const disruptedStation = data.disruptions.find(disruption => disruption.station.station === "Lund C");
+        console.log(disruptedStation)
+      
+        if (disruptedStation) {
+          return disruptedStation.delaycount;
+        } else {
+          return 0;
         }
-      });
-      onChangeDisruptions(newDisruptions);
+      }
+
+      onChangeDisruptions(displayDelay);
     });
   })
  
