@@ -1,9 +1,8 @@
 import React from "react";
 import "./App.css";
-import MeditationComponent from "./MeditationComponent";
 
 function App() {
-  return <MeditationComponent />;
+  return;
 }
 
 export default App;
