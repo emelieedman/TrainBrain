@@ -1,6 +1,6 @@
 import React from "react";
 
-function HardCodeTrainInfo () {
+function TrainInfoComponent () {
     return (
     <div className = "info-component">
         <img
@@ -17,4 +17,4 @@ function HardCodeTrainInfo () {
     )
 }
 
-export default HardCodeTrainInfo;
+export default TrainInfoComponent;

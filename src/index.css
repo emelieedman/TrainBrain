@@ -3,61 +3,6 @@ body {
   background-color: #341a3e;
 }
 
-#way-icon {
-  width: 90px;
-  height: 90px;
-  padding: 0;
-  color: white;
-  justify-self: center;
-  align-self: center;
-}
-
-.info-component {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 45% 50%;
-  height: 800px;
-  width: 100vw;
-  position: absolute;
-  top: 150px;
-  border-top-left-radius: 130px;
-  background-color: #F18B66;
-  font-family: "Saira", sans-serif;
-  
-}
-
-.first-line {
-  color: white;
-  justify-self: left;
-  align-self: center;
-  font-size: 24px;
-}
-
-#info-wrapper{
-  text-align: center;
-  grid-column-end: span 2;
-  font-size: 25px;
-}
-
-.delays-line {
-  justify-self: center;
-  align-self: center;
-  font-size: 24px;
-}
-
-.station-line {
-  justify-self: center;
-  align-self: center;
-  font-size: 42px;
-}
-
-.time-line {
-  justify-self: center;
-  align-self: center;
-  font-size: 38px;
-}
-
-
 .meditation-component {
   display: grid;
   grid-template-columns: 1fr 1fr;
