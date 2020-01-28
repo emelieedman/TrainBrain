@@ -2,22 +2,3 @@ body {
   margin: 0;
   background-color: #341a3e;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.greeter-text {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 80px;
-  color: white;
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 155.2%;
-  letter-spacing: 0.06em;
-}
