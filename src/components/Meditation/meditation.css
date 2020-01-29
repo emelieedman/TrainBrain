@@ -1,7 +1,7 @@
 .meditation-component {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 40% 40%;
+  grid-template-rows: 33% 40%;
   background-color: #997aa5;
   color: white;
   font-family: "Saira", sans-serif;
@@ -19,7 +19,7 @@
   width: 80px;
   height: 56px;
   padding: 0;
-  margin-top: -50px;
+
 }
 
 .meditation-item1 {
@@ -31,7 +31,7 @@
   justify-self: left;
   align-self: center;
   font-size: 24px;
-  margin-top: -20px;
+ 
 }
 .meditation-item3 {
   text-align: center;
