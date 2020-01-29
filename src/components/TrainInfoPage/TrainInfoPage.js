@@ -40,8 +40,7 @@ const TrainBrainAPI = () => {
       <h1 className="first-line">TRAVEL INFO</h1>
       <h1 className="station-line">LUND C</h1>
       <h3 className="delays-line">DELAY</h3>
-      <h1 className="time-line">1 MIN{disruptions}</h1>
-      {/* hardcoded 1 MIN to be able to style it, can be removed */}
+      <h1 className="time-line">{disruptions}</h1>
     </div>
   );
 };
