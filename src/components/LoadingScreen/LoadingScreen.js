@@ -10,7 +10,10 @@ function LoadingMessage() {
         src={require("./trainbrainlogo.svg")}
         alt="Train Brain Logo."
       />
-      <h1>Destressing Your Daily Commute</h1>
+      <h1>
+        Destressing Your
+        <br /> Daily Commute
+      </h1>
       <div className="loading-dot">.</div>
     </div>
   );
