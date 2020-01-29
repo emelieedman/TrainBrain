@@ -15,11 +15,11 @@
   grid-template-rows: 20% 10% 10% 3%;
   height: 800px;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   top: 150px;
   border-top-left-radius: 130px;
   background-color: #f18b66;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
 }
 
 .first-line {
