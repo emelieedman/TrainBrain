@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import auth0Client from "../Auth";
 import "./LoadingScreenStyling.css";
 
 function LoadingMessage() {
@@ -28,7 +27,6 @@ function LoadingScreen(WrappedComponent) {
 
     async componentDidMount() {
       try {
-        //  await auth0Client.loadSession();
         setTimeout(() => {
           this.setState({
             loading: false
@@ -46,7 +44,7 @@ function LoadingScreen(WrappedComponent) {
       // while checking user session, show "loading" message
       if (this.state.loading) return LoadingMessage();
 
-      // otherwise, show the desired route
+      // otherwise, show the desired route (we don't have any props for the wrapped component, App, so could remove it?
       return <WrappedComponent {...this.props} />;
     }
   };
