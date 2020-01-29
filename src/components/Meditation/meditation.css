@@ -36,3 +36,32 @@
   grid-column-end: span 2;
   font-size: 18px;
 }
+
+#breath {
+  animation-name: breathIn;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  transform-origin: 50% 50%;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes breathIn {
+  0% {
+    transform: scale(0.05);
+    background-color: rgb(121, 49, 155);
+  }
+
+  100% {
+    transform: scale(2);
+    background-color: aqua;
+    animation-delay: 60s;
+  }
+}
