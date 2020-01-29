@@ -17,9 +17,10 @@ const TrainBrainAPI = () => {
     }
 
     myData.then(data => {
+
       let displayDelay = function () {
         const disruptedStation = data.prognosis.find(disruption => disruption.station === "Lu");
-        console.log(disruptedStation)
+      
       
         if (disruptedStation) {
 
@@ -32,7 +33,7 @@ const TrainBrainAPI = () => {
 
       let displayAccuracy = function () {
         const disruptedStation = data.prognosis.find(disruption => disruption.station === "Lu");
-        console.log(disruptedStation)
+        
       
         if (disruptedStation) {
 
@@ -45,7 +46,6 @@ const TrainBrainAPI = () => {
 
       let displayScheduled = function () {
         const disruptedStation = data.prognosis.find(disruption => disruption.station === "Lu");
-        console.log(disruptedStation)
       
         if (disruptedStation) {
           let stationArray = disruptedStation.scheduled.split("");
@@ -56,17 +56,21 @@ const TrainBrainAPI = () => {
         }
       }
 
+     
       onChangeDisruptions(displayDelay);
       onChangeAccuracy(displayAccuracy);
-      onChangeScheduled(displayScheduled)
+      onChangeScheduled(displayScheduled);
+
+
     });
   })
  
 
   return (
     <div>
-      <h1>Delays in Lund C latest 120 mins: </h1>
-<p>Next train is scheduled at {scheduled} and it is delayed by {disruptions} mins with {accuracy} accuracy!</p>
+      <h1>Delays in Lund C: </h1>
+      {disruptions === "0" && accuracy === "100%" ? <p>Next train is scheduled at {scheduled} and there are no delays!</p> : <p>Next train is scheduled at {scheduled} and it is delayed by {disruptions} mins with {accuracy} accuracy!</p> }
+
     </div>
   );
 };
