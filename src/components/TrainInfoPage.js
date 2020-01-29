@@ -7,6 +7,8 @@ const TrainBrainAPI = () => {
  
   const myData = myApiCall();
   const [disruptions, onChangeDisruptions] = useState();
+  const [accuracy, onChangeAccuracy] = useState();
+  const [scheduled, onChangeScheduled] = useState();
 
   useEffect (() => {
 
@@ -15,19 +17,48 @@ const TrainBrainAPI = () => {
     }
 
     myData.then(data => {
-      
       let displayDelay = function () {
-        const disruptedStation = data.disruptions.find(disruption => disruption.station.station === "Lund C");
+        const disruptedStation = data.prognosis.find(disruption => disruption.station === "Lu");
         console.log(disruptedStation)
       
         if (disruptedStation) {
-          return disruptedStation.delaycount;
+
+          return disruptedStation.predicted_delay_minutes;
         } else {
           return 0;
+
+        }
+      }
+
+      let displayAccuracy = function () {
+        const disruptedStation = data.prognosis.find(disruption => disruption.station === "Lu");
+        console.log(disruptedStation)
+      
+        if (disruptedStation) {
+
+          return disruptedStation.predicted_delay_accuracy;
+        } else {
+          return 0;
+
+        }
+      }
+
+      let displayScheduled = function () {
+        const disruptedStation = data.prognosis.find(disruption => disruption.station === "Lu");
+        console.log(disruptedStation)
+      
+        if (disruptedStation) {
+          let stationArray = disruptedStation.scheduled.split("");
+          return stationArray.splice(0, 5);
+        } else {
+          return 0;
+
         }
       }
 
       onChangeDisruptions(displayDelay);
+      onChangeAccuracy(displayAccuracy);
+      onChangeScheduled(displayScheduled)
     });
   })
  
@@ -35,7 +66,7 @@ const TrainBrainAPI = () => {
   return (
     <div>
       <h1>Delays in Lund C latest 120 mins: </h1>
-      <p>{disruptions}</p>
+<p>Next train is scheduled at {scheduled} and it is delayed by {disruptions} mins with {accuracy} accuracy!</p>
     </div>
   );
 };
