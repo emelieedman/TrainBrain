@@ -26,18 +26,21 @@ function LoadingScreen(WrappedComponent) {
     }
 
     async componentDidMount() {
-      try {
-        setTimeout(() => {
-          this.setState({
-            loading: false
-          });
-        }, 2500);
-      } catch (err) {
-        console.log(err);
+      //API fetch goes here
+      //await. TrainInfoService
+
+      //try {
+      setTimeout(() => {
         this.setState({
           loading: false
         });
-      }
+      }, 2500);
+      //  } catch (err) {
+      //    console.log(err);
+      //    this.setState({
+      //      loading: false
+      //    });
+      //  }
     }
 
     render() {
@@ -45,6 +48,7 @@ function LoadingScreen(WrappedComponent) {
       if (this.state.loading) return LoadingMessage();
 
       // otherwise, show the desired route (we don't have any props for the wrapped component, App, so could remove it?
+      //Fetched data goes into prop of WrappedComponent!
       return <WrappedComponent {...this.props} />;
     }
   };
