@@ -15,7 +15,7 @@ const Greeter = () => {
   }
   return (
     <h1 className="greeter-text">
-      GOOD {timeOfDay} <br></br> SUNSHINE!
+      GOOD {timeOfDay} <br></br>!
     </h1>
   );
 };
