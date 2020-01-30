@@ -1,13 +1,14 @@
 form {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 20% 20% 20% 20% 20% 30%;
-  margin-top: 20%;
+  grid-template-rows: 35% 20% 20% 20% 20% 30%;
+  margin-top: 25%;
   color: lightgray;
   font-family: "Saira", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 28px;
+  letter-spacing: 0.1em;
 }
 
 .headline {
@@ -16,15 +17,11 @@ form {
   width: 60%;
   text-align: center;
   font-size: 24px;
+  font-weight: 200;
 }
 
 .input-text {
   font-size: 12px;
-  justify-self: center;
-  align-self: center;
-}
-
-.submit-button {
   justify-self: center;
   align-self: center;
 }
@@ -35,12 +32,4 @@ form {
   box-shadow: inset 0px 7px 7px rgba(0, 0, 0, 0.25);
   border-style: none;
   border-radius: 4px;
-}
-
-.submit-button input {
-  width: 100px;
-  height: 45px;
-  border-style: none;
-  background: #de8062;
-  border-radius: 115px;
 }
