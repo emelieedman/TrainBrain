@@ -46,8 +46,6 @@
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  display: flex;
-  justify-content: center;
 }
 
 .text {
@@ -55,6 +53,8 @@
   font-size: 8px;
   letter-spacing: 0.5em;
   font-weight: 200;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes breatheIn {
