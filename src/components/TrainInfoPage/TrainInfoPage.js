@@ -14,32 +14,19 @@ const TrainBrainAPI = () => {
     }
 
     myData.then(data => {
-      let displayDelay = function() {
-        const disruptedStation = data.prognosis.find(
-          disruption => disruption.station === "Lu"
-        );
-        if (disruptedStation) {
-          return disruptedStation.predicted_delay_minutes;
-        } else {
-          return 0;
-        }
-      };
 
-      let displayAccuracy = function() {
-        const disruptedStation = data.prognosis.find(
-          disruption => disruption.station === "Lu"
-        );
-        if (disruptedStation) {
-          return disruptedStation.predicted_delay_accuracy;
-        } else {
-          return 0;
-        }
-      };
+      const disruptedStation = data.prognosis.find(
+        disruption => disruption.station === "Lu"
+      );
+      let displayDelay = disruptedStation
+        ? disruptedStation.predicted_delay_minutes
+        : 0;
+      let displayAccuracy = disruptedStation
+        ? disruptedStation.predicted_delay_accuracy
+        : 0;
 
       let displayScheduled = function() {
-        const disruptedStation = data.prognosis.find(
-          disruption => disruption.station === "Lu"
-        );
+
         if (disruptedStation) {
           let stationArray = disruptedStation.scheduled.split("");
           return stationArray.splice(0, 5);
@@ -53,22 +40,6 @@ const TrainBrainAPI = () => {
       onChangeScheduled(displayScheduled);
     });
   });
-
-  //   return (
-  //     <div className="info-component">
-  //       <img
-  //         className="location-icon"
-  //         id="way-icon"
-  //         src={require("./way.svg")}
-  //         alt=""
-  //       />
-  //       <h1 className="first-line">TRAVEL INFO</h1>
-  //       <h1 className="station-line">LUND C</h1>
-  //       <h3 className="delays-line">DELAY</h3>
-  //       <h1 className="time-line">{disruptions}</h1>
-  //     </div>
-  //   );
-  // };
 
   return (
     <div className="info-component">
@@ -92,7 +63,7 @@ const TrainBrainAPI = () => {
         <div className="delay-info">
           <p>
             <br></br>{disruptions} min delay<br></br>
-            {accuracy} accuracy{" "}
+            {accuracy} accuracy
           </p>
         </div>
       )}
