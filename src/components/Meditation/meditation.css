@@ -8,7 +8,7 @@
   letter-spacing: 0.06em;
   line-height: 155.2%;
   width: 100vw;
-  height: 500px;
+  height: 450px;
   position: absolute;
   left: 0;
   top: 80vh;
@@ -19,7 +19,6 @@
   width: 80px;
   height: 56px;
   padding: 0;
-
 }
 
 .meditation-item1 {
@@ -31,10 +30,40 @@
   justify-self: left;
   align-self: center;
   font-size: 24px;
- 
 }
-.meditation-item3 {
-  text-align: center;
-  grid-column-end: span 2;
-  font-size: 18px;
+
+#breath {
+  animation-name: breatheIn;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  transform-origin: 50% 50%;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  margin-top: 39px;
+  font-size: 8px;
+  letter-spacing: 0.5em;
+  font-weight: 200;
+}
+
+@keyframes breatheIn {
+  0% {
+    transform: scale(0.05);
+  }
+
+  100% {
+    transform: scale(2);
+    background-color: #341a3e;
+  }
 }
