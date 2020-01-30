@@ -7,7 +7,7 @@ const TravelProfile = () => {
       <h1 className="headline">CREATE YOUR USER PROFILE!</h1>
       <div className="input-text">
         Username:<br></br>
-        <input id="username" type="text" name="username" value=""></input>
+        <input id="username" type="text" name="username"></input>
       </div>
       <div className="input-text">
         Password:<br></br>
