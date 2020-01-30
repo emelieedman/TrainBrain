@@ -21,9 +21,6 @@ const TravelProfile = () => {
         To:<br></br>
         <input type="text" name="to" placeholder="Lund C"></input>
       </div>
-      <div className="submit-button">
-        <input type="submit" value="SUBMIT"></input>
-      </div>
     </form>
   );
 };
