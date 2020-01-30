@@ -72,7 +72,6 @@ const TrainBrainAPI = () => {
 
   return (
     <div className="info-component">
-     
       <img
         className="location-icon"
         id="way-icon"
@@ -80,20 +79,20 @@ const TrainBrainAPI = () => {
         alt=""
       />
       <h1 className="travel-info">TRAVEL INFO</h1>
-     
-     
       <h1 className="style-large">LUND C</h1>
       <h3 className="style-small">NEXT TRAIN:</h3>
       <h1>
         {disruptions === "0" && accuracy === "100%" ? (
           <p>
             {" "}
-            <p className="style-large">{scheduled}</p> <br></br><p className="style-small">No delays!</p>
+            <p className="style-large">{scheduled}</p> <br></br>
+            <p className="style-small">No delays!</p>
           </p>
         ) : (
           <p className="style-small">
-            Next train is scheduled at {scheduled} and it is delayed by{" "}
-            {disruptions} mins with {accuracy} accuracy!
+            {scheduled}
+            <br></br> {disruptions} min delay<br></br>
+            {accuracy} accuracy
           </p>
         )}
       </h1>
