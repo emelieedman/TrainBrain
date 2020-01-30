@@ -4,6 +4,7 @@ import Greeter from "./components/Greeter/Greeter";
 import Meditation from "./components/Meditation/Meditation";
 import TrainInfoPage from "./components/TrainInfoPage/TrainInfoPage";
 import TravelProfile from "./components/TravelProfile/TravelProfile";
+import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default LoadingScreen(App);
