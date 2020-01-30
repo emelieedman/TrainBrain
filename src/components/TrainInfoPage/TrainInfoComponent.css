@@ -12,7 +12,7 @@
 .info-component {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 10% 10% 3%;
+  grid-template-rows: 20% 10% 5% 10% 5%;
   height: 800px;
   width: 100vw;
   position: fixed;
@@ -52,10 +52,17 @@
   grid-column: span 2;
   letter-spacing: 0.2em;
   font-weight: 400;
-  margin-bottom: -20px;
 }
 
+.delay-info {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-column: span 2;
+  letter-spacing: 0.05em;
 
+
+}
 
 /* .time-line {
   justify-self: center;
