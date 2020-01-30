@@ -22,7 +22,7 @@
   font-family: "Saira", sans-serif;
 }
 
-.first-line {
+.travel-info {
   color: white;
   justify-self: left;
   align-self: center;
@@ -36,7 +36,7 @@
   font-size: 25px;
 }
 
-.delays-line {
+.style-small {
   justify-self: center;
   align-self: center;
   font-size: 24px;
@@ -45,7 +45,7 @@
   font-weight: 200;
 }
 
-.station-line {
+.style-large {
   justify-self: center;
   align-self: center;
   font-size: 42px;
@@ -55,11 +55,13 @@
   margin-bottom: -20px;
 }
 
-.time-line {
+
+
+/* .time-line {
   justify-self: center;
   align-self: center;
   font-size: 42px;
   grid-column: span 2;
   letter-spacing: 0.1em;
   font-weight: 400;
-}
+} */
