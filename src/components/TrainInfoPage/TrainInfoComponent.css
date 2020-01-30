@@ -19,6 +19,10 @@
   top: 150px;
   border-top-left-radius: 130px;
   background-color: #f18b66;
+  background-image: url(./backgroundimg.svg);
+  background-position: 35% 40%;
+  background-repeat: no-repeat;
+  background-size: 140%;
   font-family: "Saira", sans-serif;
 }
 
@@ -60,8 +64,6 @@
   text-align: center;
   grid-column: span 2;
   letter-spacing: 0.05em;
-
-
 }
 
 /* .time-line {
