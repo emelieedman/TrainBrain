@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./LoadingScreenStyling.css";
+import styles from "./LoadingScreenStyling.module.css";
 
 function LoadingMessage() {
   return (
-    <div className="wrapper">
-      <div className="text">
-        <h1 className="message">
+    <div className={styles.wrapper}>
+      <div className={styles.text}>
+        <h1 className={styles.message}>
           DESTRESSING
           <br /> YOUR DAILY <br />
           COMMUTE

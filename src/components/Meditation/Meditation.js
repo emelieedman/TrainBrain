@@ -1,18 +1,18 @@
 import React from "react";
-import "./meditation.css";
+import meditationstyle from "./meditation.module.css";
 
 const MeditationComponent = () => {
   return (
-    <div className="meditation-component">
+    <div className={meditationstyle.meditationComponent}>
       <img
-        className="meditation-item1"
-        id="mandala"
+        className={meditationstyle.meditationItem1}
+        id={meditationstyle.mandala}
         src={require("./mandala.svg")}
-        alt=""
+        alt="mandala"
       />
-      <h2 className="meditation-item2">MEDITATION</h2>
-      <div id="breath">
-        <h5 className="meditation-text">BREATHE</h5>
+      <h2 className={meditationstyle.meditationItem2}>MEDITATION</h2>
+      <div id={meditationstyle.breath}>
+        <h5 className={meditationstyle.meditationText}>BREATHE</h5>
       </div>
     </div>
   );

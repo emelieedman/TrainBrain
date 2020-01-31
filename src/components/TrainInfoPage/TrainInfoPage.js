@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { myApiCall } from "../../services/TrainInfoService";
-import "./TrainInfoComponent.css";
+import traininfostyle from "./TrainInfoComponent.module.css";
 import Greeter from "../Greeter/Greeter";
 
 const TrainBrainAPI = () => {
@@ -56,25 +56,25 @@ const TrainBrainAPI = () => {
   });
 
   return (
-    <div className="main-content">
-      <Greeter />
-      <div className="info-component">
-        <h1 className="travel-info">TRAVEL INFORMATION</h1>
-        <h1 className="style-large">LUND C</h1>
-        <h3 className="style-small">NEXT TRAIN</h3>
-        <h4 className="style-large" id="time">
-          {scheduled}
-        </h4>
-
-        {disruptions === "0" && accuracy === "100%" ? (
-          <p className="delay-info">NO DELAYS</p>
-        ) : (
-          <p className="delay-info">
-            {disruptions} MIN DELAY<br></br>
-            {accuracy} ACCURACY{" "}
-          </p>
-        )}
+    <div className={traininfostyle.infoComponent}>
+      <div className={traininfostyle.greeter}>
+        <Greeter />
       </div>
+      <h1 className={traininfostyle.travelInfo}>TRAVEL INFORMATION</h1>
+      <h2 className={traininfostyle.styleLarge}>LUND C</h2>
+      <h3 className={traininfostyle.styleSmall}>NEXT TRAIN</h3>
+      <h4 className={traininfostyle.styleLarge} id={traininfostyle.time}>
+        {scheduled}
+      </h4>
+
+      {disruptions === "0" && accuracy === "100%" ? (
+        <p className={traininfostyle.delayInfo}>NO DELAYS</p>
+      ) : (
+        <p className={traininfostyle.delayInfo}>
+          {disruptions} MIN DELAY<br></br>
+          {accuracy} ACCURACY{" "}
+        </p>
+      )}
     </div>
   );
 };
