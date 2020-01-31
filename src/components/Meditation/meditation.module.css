@@ -4,8 +4,8 @@
   grid-template-rows: 25% 40%;
   background: linear-gradient(
     180deg,
-    #dde8e9 40.42% 80%,
-    rgba(212, 227, 228, 0) 100%
+    #dde8e9 40.42% 60%,
+    rgba(212, 227, 228, 0) 110%
   );
 
   color: white;

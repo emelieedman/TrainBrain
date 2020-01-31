@@ -4,7 +4,7 @@
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 15% 10% 5% 10% 10%;
+  grid-template-rows: 25% 10% 10% 5% 10% 10%;
   height: 100vh;
   width: 100vw;
   background-position: 30% 20%;
@@ -66,8 +66,9 @@
 
 .styleLarge {
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
   grid-column: span 2;
+  width: 100vw;
 
   font-style: normal;
   font-weight: 600;
@@ -81,6 +82,7 @@
 
 .delayInfo {
   justify-self: center;
+  align-self: center;
   grid-column: span 2;
   margin: 0px;
 
@@ -95,12 +97,5 @@
 }
 
 #time {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 76px;
-  text-align: center;
-  letter-spacing: 0.14em;
-
   color: #94faff;
 }
