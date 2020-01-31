@@ -60,6 +60,7 @@ const TrainBrainAPI = () => {
       <div className={traininfostyle.greeter}>
         <Greeter />
       </div>
+
       <h1 className={traininfostyle.travelInfo}>TRAVEL INFORMATION</h1>
       <h2 className={traininfostyle.styleLarge}>LUND C</h2>
       <h3 className={traininfostyle.styleSmall}>NEXT TRAIN</h3>
@@ -75,6 +76,11 @@ const TrainBrainAPI = () => {
           {accuracy} ACCURACY{" "}
         </p>
       )}
+      <img
+        className={traininfostyle.waysvg}
+        src={require("../../assets/backgroundimg.svg")}
+        alt=""
+      />
     </div>
   );
 };

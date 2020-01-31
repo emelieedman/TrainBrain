@@ -4,7 +4,7 @@
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25% 15% 10% 5% 10% 10%;
+  grid-template-rows: 20% 15% 10% 5% 10% 10%;
   height: 100vh;
   width: 100vw;
   background-position: 30% 20%;
@@ -25,6 +25,13 @@
   grid-column: span 2;
   text-align: center;
   align-self: flex-end;
+}
+
+.waysvg {
+  width: 150vw;
+  position: absolute;
+  top: 32%;
+  left: -20%;
 }
 
 .travelInfo {
