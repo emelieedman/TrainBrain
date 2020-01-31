@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { myApiCall } from "../../services/TrainInfoService";
 import "./TrainInfoComponent.css";
+import Greeter from "../Greeter/Greeter";
 
 const TrainBrainAPI = () => {
   const myData = myApiCall();
@@ -54,48 +55,26 @@ const TrainBrainAPI = () => {
     });
   });
 
-  //   return (
-  //     <div className="info-component">
-  //       <img
-  //         className="location-icon"
-  //         id="way-icon"
-  //         src={require("./way.svg")}
-  //         alt=""
-  //       />
-  //       <h1 className="first-line">TRAVEL INFO</h1>
-  //       <h1 className="station-line">LUND C</h1>
-  //       <h3 className="delays-line">DELAY</h3>
-  //       <h1 className="time-line">{disruptions}</h1>
-  //     </div>
-  //   );
-  // };
-
   return (
-    <div className="info-component">
-      <img
-        className="location-icon"
-        id="way-icon"
-        src={require("./way.svg")}
-        alt=""
-      />
-      <h1 className="travel-info">TRAVEL INFO</h1>
-      <h1 className="style-large">LUND C</h1>
-      <h3 className="style-small">NEXT TRAIN</h3>
-      <h4 className="style-large">{scheduled}</h4>
+    <div className="main-content">
+      <Greeter />
+      <div className="info-component">
+        <h1 className="travel-info">TRAVEL INFORMATION</h1>
+        <h1 className="style-large">LUND C</h1>
+        <h3 className="style-small">NEXT TRAIN</h3>
+        <h4 className="style-large" id="time">
+          {scheduled}
+        </h4>
 
-      {disruptions === "0" && accuracy === "100%" ? (
-        <div className="delay-info">
-          <p className="style-large"></p> <br></br>
+        {disruptions === "0" && accuracy === "100%" ? (
           <p className="delay-info">NO DELAYS</p>
-        </div>
-      ) : (
-        <div className="delay-info">
-          <p>
-            <br></br>{disruptions} min delay<br></br>
-            {accuracy} accuracy{" "}
+        ) : (
+          <p className="delay-info">
+            {disruptions} MIN DELAY<br></br>
+            {accuracy} ACCURACY{" "}
           </p>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

@@ -1,26 +1,14 @@
-#way-icon {
-  width: 80px;
-  height: 80px;
-  padding: 0;
-  color: white;
-  justify-self: center;
-  align-self: center;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
 .info-component {
+  position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 10% 5% 10% 5%;
+  grid-template-rows: 15% 10% 5% 10% 10%;
   height: 800px;
   width: 100vw;
   position: fixed;
   top: 150px;
-  border-top-left-radius: 130px;
-  background-color: #f18b66;
   background-image: url(./backgroundimg.svg);
-  background-position: 35% 40%;
+  background-position: 30% 20%;
   background-repeat: no-repeat;
   background-size: 140%;
   font-family: "Saira", sans-serif;
@@ -28,42 +16,73 @@
 
 .travel-info {
   color: white;
-  justify-self: left;
+  justify-self: center;
   align-self: center;
-  font-size: 24px;
-  column-span: 2;
-}
+  margin: 0px;
 
-#info-wrapper {
-  text-align: center;
   grid-column-end: span 2;
-  font-size: 25px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 155.2%;
+  letter-spacing: 0.11em;
 }
 
 .style-small {
   justify-self: center;
   align-self: center;
-  font-size: 24px;
   grid-column: span 2;
-  letter-spacing: 0.5em;
-  font-weight: 200;
+  margin: 0px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.46em;
+
+  color: #ffffff;
 }
 
 .style-large {
   justify-self: center;
   align-self: center;
-  font-size: 42px;
   grid-column: span 2;
-  letter-spacing: 0.2em;
-  font-weight: 400;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: 0.19em;
+  color: white;
+  margin: 0px;
 }
 
 .delay-info {
   justify-self: center;
-  align-self: center;
-  text-align: center;
   grid-column: span 2;
-  letter-spacing: 0.05em;
+  margin: 0px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.19em;
+
+  color: #40abb1;
+}
+
+#time {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #aafaff;
 }
 
 /* .time-line {

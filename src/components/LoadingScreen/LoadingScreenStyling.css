@@ -1,33 +1,44 @@
-.loading-screen {
-  width: 100%;
-  height: 100%;
+.wrapper {
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(backpack.png);
+  background-size: cover;
+}
+
+.text {
   display: flex;
   flex-direction: column;
-  margin-top: 50%;
   align-items: center;
   justify-content: center;
+  margin-top: 30vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+
+  background-color: rgba(221, 232, 233, 0.829);
+  border-radius: 100%;
+  height: 80vw;
+}
+
+.message {
   color: white;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-  font-size: 20px;
-}
-
-h1 {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  font-size: 1rem;
+  font-family: Saira;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
   text-align: center;
+  letter-spacing: 0.1em;
 }
 
-.loading-screen .loading-dot {
+/* .loading-screen .loading-dot {
   font-size: 100px;
   margin-top: -80px;
   position: relative;
   animation: ease-in-out infinite alternate;
   animation-name: run;
   animation-duration: 1.2s;
-}
+} */
 
 @keyframes run {
   0% {

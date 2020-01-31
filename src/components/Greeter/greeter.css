@@ -8,13 +8,13 @@ code {
   position: fixed;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10vh;
   color: white;
-  font-family: "Saira", sans-serif;
+  font-family: Saira;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 155.2%;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.3em;
   width: 100%;
 }

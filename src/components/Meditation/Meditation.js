@@ -12,7 +12,7 @@ const MeditationComponent = () => {
       />
       <h2 className="meditation-item2">MEDITATION</h2>
       <div id="breath">
-      <h5 className="text">BREATHE</h5>
+        <h5 className="meditation-text">BREATHE</h5>
       </div>
     </div>
   );

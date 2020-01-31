@@ -3,18 +3,14 @@ import "./LoadingScreenStyling.css";
 
 function LoadingMessage() {
   return (
-    <div className="loading-screen">
-      <img
-        className="loadingscreen-logo"
-        id="trainbrainlogo"
-        src={require("./trainbrainlogo.svg")}
-        alt="Train Brain Logo."
-      />
-      <h1>
-        Destressing Your
-        <br /> Daily Commute
-      </h1>
-      <div className="loading-dot">.</div>
+    <div className="wrapper">
+      <div className="text">
+        <h1 className="message">
+          DESTRESSING
+          <br /> YOUR DAILY <br />
+          COMMUTE
+        </h1>
+      </div>
     </div>
   );
 }

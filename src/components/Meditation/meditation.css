@@ -1,14 +1,19 @@
 .meditation-component {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 40%;
-  background-color: #997aa5;
+  grid-template-rows: 25% 40%;
+  background: linear-gradient(
+    180deg,
+    #dde8e9 40.42% 80%,
+    rgba(212, 227, 228, 0) 100%
+  );
+
   color: white;
   font-family: "Saira", sans-serif;
   letter-spacing: 0.06em;
   line-height: 155.2%;
   width: 100vw;
-  height: 450px;
+  height: 650px;
   position: absolute;
   left: 0;
   top: 80vh;
@@ -48,7 +53,7 @@
   animation-direction: alternate;
 }
 
-.text {
+.meditation-text {
   margin-top: 39px;
   font-size: 8px;
   letter-spacing: 0.5em;
@@ -64,6 +69,6 @@
 
   100% {
     transform: scale(2);
-    background-color: #341a3e;
+    background: #c3cfd0;
   }
 }
