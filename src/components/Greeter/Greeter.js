@@ -10,6 +10,8 @@ const Greeter = () => {
     timeOfDay = "MORNING";
   } else if (hours >= 12 && hours < 17) {
     timeOfDay = "AFTERNOON";
+  } else if (hours >= 17 && hours < 20) {
+    timeOfDay = "EVENING";
   } else {
     timeOfDay = "NIGHT";
   }

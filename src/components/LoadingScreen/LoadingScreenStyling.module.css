@@ -16,45 +16,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vw;
+  width: 70vw;
 
   background-color: #bcdbdfa9;
   border-radius: 100%;
-  height: 80vw;
 }
 
 .message {
   color: white;
   font-family: Saira;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 120%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
   text-align: center;
   letter-spacing: 0.1em;
-}
-
-/* .loading-screen .loading-dot {
-  font-size: 100px;
-  margin-top: -80px;
-  position: relative;
-  animation: ease-in-out infinite alternate;
-  animation-name: run;
-  animation-duration: 1.2s;
-} */
-
-@keyframes run {
-  0% {
-    left: -90px;
-    color: #eee;
-  }
-  50% {
-    color: #666;
-  }
-  100% {
-    left: 90px;
-    color: #eee;
-  }
 }

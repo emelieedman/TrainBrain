@@ -5,7 +5,7 @@
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25% 10% 10% 5% 10% 10%;
+  grid-template-rows: 25% 5% 15% 5% 10% 10%;
   height: 100vh;
   width: 100vw;
   background-position: 30% 20%;
@@ -25,24 +25,23 @@
   padding: 0;
   grid-column: span 2;
   text-align: center;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .waysvg {
   width: 150vw;
   position: absolute;
-  top: 32%;
+  top: 30%;
   left: -20%;
 }
 
 .travelInfo {
-  color: white;
   justify-self: center;
   align-self: center;
   margin: 0px;
 
   grid-column-end: span 2;
-
+  color: white;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -53,31 +52,29 @@
 .styleSmall {
   justify-self: center;
   align-self: center;
+  text-align: center;
   grid-column: span 2;
   margin: 0px;
-
+  color: #40abb1;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 38px;
   letter-spacing: 0.46em;
-
-  color: #ffffff;
 }
 
 .styleLarge {
   justify-self: center;
-  align-self: flex-end;
+  align-self: center;
   grid-column: span 2;
   width: 100vw;
-
+  color: white;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 1000;
   font-size: 48px;
   line-height: 76px;
   text-align: center;
   letter-spacing: 0.19em;
-  color: white;
   margin: 0px;
 }
 
@@ -94,7 +91,7 @@
   text-align: center;
   letter-spacing: 0.19em;
 
-  color: #94faff;
+  color: #40abb1;
 }
 
 #time {

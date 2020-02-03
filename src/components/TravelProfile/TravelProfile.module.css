@@ -26,7 +26,7 @@
 
 .greeter {
   text-align: center;
-  align-self: flex-end;
+  align-self: center;
   width: 100vw;
   text-align: center;
   font-size: 24px;
@@ -36,13 +36,13 @@
 }
 
 .inputText {
-  font-size: 12px;
+  font-size: 14px;
   justify-self: center;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .inputText input {
-  width: 260px;
+  width: 220px;
   padding: 18px;
   box-shadow: inset 0px 7px 7px rgba(0, 0, 0, 0.25);
   border-style: none;
