@@ -1,6 +1,7 @@
 .infoComponent {
-  font-family: "Saira", sans-serif;
   display: inline-block;
+  font-family: "Saira", sans-serif;
+
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;

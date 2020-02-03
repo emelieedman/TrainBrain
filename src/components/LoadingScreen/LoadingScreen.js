@@ -25,25 +25,29 @@ function LoadingScreen(WrappedComponent) {
     }
 
     async componentDidMount() {
-      try {
+      //API fetch goes here
+      //await. TrainInfoService
+
+      //try {
         setTimeout(() => {
-          this.setState({
-            loading: false
-          });
-        }, 2500);
-      } catch (err) {
-        console.log(err);
         this.setState({
           loading: false
         });
-      }
+    }, 2500);
     }
+      //  } catch (err) {
+      //    console.log(err);
+      //    this.setState({
+      //      loading: false
+      //    });
+      //  }
 
     render() {
       // while checking user session, show "loading" message
       if (this.state.loading) return LoadingMessage();
 
       // otherwise, show the desired route (we don't have any props for the wrapped component, App, so could remove it?
+      //Fetched data goes into prop of WrappedComponent!
       return <WrappedComponent {...this.props} />;
     }
   };

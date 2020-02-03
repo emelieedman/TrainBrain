@@ -15,32 +15,17 @@ const TrainBrainAPI = () => {
     }
 
     myData.then(data => {
-      let displayDelay = function() {
-        const disruptedStation = data.prognosis.find(
-          disruption => disruption.station === "Lu"
-        );
-        if (disruptedStation) {
-          return disruptedStation.predicted_delay_minutes;
-        } else {
-          return 0;
-        }
-      };
-
-      let displayAccuracy = function() {
-        const disruptedStation = data.prognosis.find(
-          disruption => disruption.station === "Lu"
-        );
-        if (disruptedStation) {
-          return disruptedStation.predicted_delay_accuracy;
-        } else {
-          return 0;
-        }
-      };
+      const disruptedStation = data.prognosis.find(
+        disruption => disruption.station === "Lu"
+      );
+      let displayDelay = disruptedStation
+        ? disruptedStation.predicted_delay_minutes
+        : 0;
+      let displayAccuracy = disruptedStation
+        ? disruptedStation.predicted_delay_accuracy
+        : 0;
 
       let displayScheduled = function() {
-        const disruptedStation = data.prognosis.find(
-          disruption => disruption.station === "Lu"
-        );
         if (disruptedStation) {
           let stationArray = disruptedStation.scheduled.split("");
           return stationArray.splice(0, 5);
