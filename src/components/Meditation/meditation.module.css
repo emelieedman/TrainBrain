@@ -4,7 +4,7 @@
   grid-template-rows: 25% 40%;
   background: linear-gradient(
     180deg,
-    #dde8e9 40.42% 60%,
+    #bcdbdf 40.42% 60%,
     rgba(212, 227, 228, 0) 110%
   );
 
@@ -69,6 +69,6 @@
 
   100% {
     transform: scale(2);
-    background: #c3cfd0;
+    background: #9cbbc0;
   }
 }

@@ -7,7 +7,7 @@ const MeditationComponent = () => {
       <img
         className={meditationstyle.meditationItem1}
         id={meditationstyle.mandala}
-        src={require("./mandala.svg")}
+        src={require("../../assets/mandala.svg")}
         alt="mandala"
       />
       <h2 className={meditationstyle.meditationItem2}>MEDITATION</h2>
