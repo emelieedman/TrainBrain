@@ -1,4 +1,4 @@
-.meditationComponent {
+.meditation-component {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 25% 40%;
@@ -20,18 +20,34 @@
   border-top-left-radius: 115px;
 }
 
+.is-animated {
+  animation-name: animationStart;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+
+.reverse-animation {
+  animation-name: animationReverse;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+
 #mandala {
   width: 80px;
   height: 56px;
   padding: 0;
 }
 
-.meditationItem1 {
+.meditation-item1 {
   justify-self: center;
   align-self: center;
 }
 
-.meditationItem2 {
+.meditation-item2 {
   justify-self: left;
   align-self: center;
   font-size: 24px;
@@ -43,23 +59,43 @@
   height: 100px;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-left: -50px;
   transform-origin: 50% 50%;
   animation-duration: 6s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-.meditationText {
+.meditation-text {
   margin-top: 39px;
   font-size: 8px;
   letter-spacing: 0.5em;
   font-weight: 200;
   display: flex;
   justify-content: center;
+}
+
+@keyframes animationStart {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-67%);
+  }
+}
+
+@keyframes animationReverse {
+  0% {
+    transform: translateY(-67%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes breatheIn {
