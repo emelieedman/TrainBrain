@@ -1,10 +1,13 @@
 import React from "react";
 import searchTrip from "./TravelProfile.module.css";
+import Greeter from "../Greeter/Greeter";
 
 const TravelProfile = () => {
   return (
-    <form>
-      <h1 className={searchTrip.headline}>CREATE YOUR USER PROFILE!</h1>
+    <form className={searchTrip.main}>
+      <div className={searchTrip.greeter}>
+        <Greeter />
+      </div>
       <div className={searchTrip.inputText}>
         From:<br></br>
         <input type="text" name="from" placeholder="Lund C"></input>

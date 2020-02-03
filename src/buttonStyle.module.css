@@ -3,14 +3,18 @@
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 45px;
+  width: 128px;
+  height: 53px;
   border-style: none;
-  background: #de8062;
-  border-radius: 115px;
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 28px;
+  background: #bcdbdf;
+  border-radius: 125px;
+
   letter-spacing: 0.1em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #ffffff;
 }
