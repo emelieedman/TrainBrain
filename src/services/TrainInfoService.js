@@ -1,6 +1,6 @@
 
 const myApiCall = () => {
-    return fetch("http://localhost:8080")
+    return fetch("https://cors-anywhere.herokuapp.com/https://labs.thetrainbrain.com/prognosis/")
       .then(function(response) {
         return response.json();
       })

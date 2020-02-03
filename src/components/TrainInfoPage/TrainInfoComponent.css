@@ -12,17 +12,21 @@
 .info-component {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 10% 10% 3%;
+  grid-template-rows: 20% 10% 5% 10% 5%;
   height: 800px;
   width: 100vw;
   position: fixed;
   top: 150px;
   border-top-left-radius: 130px;
   background-color: #f18b66;
+  background-image: url(./backgroundimg.svg);
+  background-position: 35% 40%;
+  background-repeat: no-repeat;
+  background-size: 140%;
   font-family: "Saira", sans-serif;
 }
 
-.first-line {
+.travel-info {
   color: white;
   justify-self: left;
   align-self: center;
@@ -36,7 +40,7 @@
   font-size: 25px;
 }
 
-.delays-line {
+.style-small {
   justify-self: center;
   align-self: center;
   font-size: 24px;
@@ -45,21 +49,28 @@
   font-weight: 200;
 }
 
-.station-line {
+.style-large {
   justify-self: center;
   align-self: center;
   font-size: 42px;
   grid-column: span 2;
   letter-spacing: 0.2em;
   font-weight: 400;
-  margin-bottom: -20px;
 }
 
-.time-line {
+.delay-info {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-column: span 2;
+  letter-spacing: 0.05em;
+}
+
+/* .time-line {
   justify-self: center;
   align-self: center;
   font-size: 42px;
   grid-column: span 2;
   letter-spacing: 0.1em;
   font-weight: 400;
-}
+} */
