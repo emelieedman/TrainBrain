@@ -4,7 +4,7 @@
   height: 100vh;
   background-image: linear-gradient(
       180deg,
-      rgba(254, 139, 139, 0) 0%,
+      rgba(255, 255, 255, 0) 0%,
       #00000096 100%
     ),
     url(../../assets/backpack.png);
@@ -23,7 +23,7 @@
   height: 70vw;
   width: 70vw;
 
-  background-color: #bcdbdf7e;
+  background-color: #bcdbdf73;
   border-radius: 100%;
 }
 
@@ -31,9 +31,9 @@
   color: white;
   font-family: Saira;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 24px;
-  line-height: 150%;
+  line-height: 110%;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
