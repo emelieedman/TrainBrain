@@ -38,7 +38,7 @@
 .inputText {
   font-size: 14px;
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .inputText input {
