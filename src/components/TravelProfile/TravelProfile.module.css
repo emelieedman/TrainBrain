@@ -2,7 +2,7 @@
   display: inline-block;
   display: grid;
 
-  grid-template-rows: 25% 18% 18%;
+  grid-template-rows: 30% 18% 18%;
 
   color: lightgray;
   font-family: "Saira", sans-serif;
