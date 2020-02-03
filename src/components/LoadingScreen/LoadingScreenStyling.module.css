@@ -2,12 +2,7 @@
   display: inline-block;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(
-      180deg,
-      rgba(254, 139, 139, 0.089) 0%,
-      #000000c7 100%
-    ),
-    url(../../assets/backpack.png);
+  background-image: url(../../assets/backpack.png);
   background-size: cover;
 }
 
@@ -23,7 +18,7 @@
   height: 70vw;
   width: 70vw;
 
-  background-color: #bcdbdfa9;
+  background-color: #bcdbdf5e;
   border-radius: 100%;
 }
 
