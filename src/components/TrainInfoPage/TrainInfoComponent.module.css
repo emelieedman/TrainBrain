@@ -5,7 +5,7 @@
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25% 5% 15% 5% 10% 10%;
+  grid-template-rows: 35% 5% 10% 5% 10% 10%;
   height: 100vh;
   width: 100vw;
   background-position: 30% 20%;
@@ -33,20 +33,6 @@
   position: absolute;
   top: 30%;
   left: -20%;
-}
-
-.travelInfo {
-  justify-self: center;
-  align-self: center;
-  margin: 0px;
-
-  grid-column-end: span 2;
-  color: white;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 155.2%;
-  letter-spacing: 0.11em;
 }
 
 .styleSmall {
