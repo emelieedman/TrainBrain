@@ -2,7 +2,7 @@
   display: inline-block;
   display: grid;
 
-  grid-template-rows: 25% 20% 15%;
+  grid-template-rows: 25% 15% 15%;
 
   color: lightgray;
   font-family: "Saira", sans-serif;
@@ -29,22 +29,23 @@
   align-self: center;
   width: 100vw;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 200;
   margin: 0;
   padding: 0;
 }
 
 .inputText {
-  font-size: 14px;
+  font-size: 18px;
   justify-self: center;
   align-self: flex-start;
 }
 
 .inputText input {
-  width: 220px;
+  width: 270px;
   padding: 18px;
   box-shadow: inset 0px 7px 7px rgba(0, 0, 0, 0.25);
   border-style: none;
   border-radius: 4px;
+  font-size: 18px;
 }
