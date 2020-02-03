@@ -1,9 +1,6 @@
 .greeterText {
+  font-family: "Pacifico", cursive;
+  font-size: 36px;
   color: white;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 155.2%;
-  letter-spacing: 0.3em;
   margin: 0;
 }
