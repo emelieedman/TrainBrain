@@ -67,7 +67,7 @@
 
 h2 {
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .delayInfo {
