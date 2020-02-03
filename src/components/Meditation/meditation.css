@@ -14,7 +14,7 @@
   line-height: 155.2%;
   width: 100vw;
   height: 650px;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 73vh;
   border-top-left-radius: 115px;
