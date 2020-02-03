@@ -21,11 +21,14 @@
 }
 
 .greeter {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  color: white;
   margin: 0;
-  padding: 0;
-  grid-column: span 2;
-  text-align: center;
+  justify-self: center;
   align-self: center;
+  text-align: center;
+  grid-column: span 2;
 }
 
 .waysvg {

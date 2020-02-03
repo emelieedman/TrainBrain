@@ -2,7 +2,7 @@
   display: inline-block;
   display: grid;
 
-  grid-template-rows: 30% 15% 15%;
+  grid-template-rows: 25% 18% 18%;
 
   color: lightgray;
   font-family: "Saira", sans-serif;
@@ -38,7 +38,7 @@
 .inputText {
   font-size: 18px;
   justify-self: center;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .inputText input {

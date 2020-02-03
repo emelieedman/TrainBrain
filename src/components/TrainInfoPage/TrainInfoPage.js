@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { myApiCall } from "../../services/TrainInfoService";
 import traininfostyle from "./TrainInfoComponent.module.css";
-import Greeter from "../Greeter/Greeter";
+// import Greeter from "../Greeter/Greeter";
 
 const TrainBrainAPI = () => {
   const myData = myApiCall();
@@ -42,9 +42,9 @@ const TrainBrainAPI = () => {
 
   return (
     <div className={traininfostyle.infoComponent}>
-      <div className={traininfostyle.greeter}>
+      {/* <div className={traininfostyle.greeter}>
         <Greeter />
-      </div>
+      </div> */}
 
       <h2 className={traininfostyle.styleLarge}>LUND C</h2>
       <h3 className={traininfostyle.styleSmall}>NEXT TRAIN</h3>
