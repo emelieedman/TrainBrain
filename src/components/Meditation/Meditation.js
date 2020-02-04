@@ -25,7 +25,7 @@ const MeditationComponent = () => {
       />
       <h2 className="meditation-item2">MEDITATION</h2>
       <div id="breath">
-        <h5 className="meditation-text">BREATHE</h5>
+        <img src={require("../../assets/pinkbutterfly32-min.gif")} alt="gif" className="meditation-animation"/>
       </div>
     </div>
   );
