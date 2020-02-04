@@ -8,6 +8,7 @@ const TrainBrainAPI = () => {
   const [disruptions, onChangeDisruptions] = useState();
   const [accuracy, onChangeAccuracy] = useState();
   const [scheduled, onChangeScheduled] = useState();
+  const [trainNumber, onChangeTrainNumber] = useState();
 
   useEffect(() => {
     if (disruptions) {
@@ -25,6 +26,8 @@ const TrainBrainAPI = () => {
         ? disruptedStation.predicted_delay_accuracy
         : 0;
 
+      let displayTrainNumber = disruptedStation ? disruptedStation.trainnr : "No train";
+
       let displayScheduled = function() {
         if (disruptedStation) {
           let stationArray = disruptedStation.scheduled.split("");
@@ -37,6 +40,7 @@ const TrainBrainAPI = () => {
       onChangeDisruptions(displayDelay);
       onChangeAccuracy(displayAccuracy);
       onChangeScheduled(displayScheduled);
+      onChangeTrainNumber(displayTrainNumber);
     });
   });
 
@@ -60,6 +64,7 @@ const TrainBrainAPI = () => {
           {accuracy} ACCURACY{" "}
         </p>
       )}
+      <h3 className={traininfostyle.styleSmallest}>TRAIN NR. {trainNumber}</h3>
       <img
         className={traininfostyle.waysvg}
         src={require("../../assets/backgroundimg.svg")}
