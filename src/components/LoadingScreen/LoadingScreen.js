@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "./LoadingScreenStyling.module.css";
 
+//loading message component is made
 function LoadingMessage() {
   return (
     <div className={styles.wrapper}>
@@ -17,38 +18,28 @@ function LoadingMessage() {
 
 function LoadingScreen(WrappedComponent) {
   return class extends Component {
+    //loading screen is set up, state is set up for changing later.
     constructor(props) {
       super(props);
       this.state = {
         loading: true
       };
     }
-
+    //timeout is set to 2.5sec so the screen stays up for a short time, after that loading is set to false
     async componentDidMount() {
-      //API fetch goes here
-      //await. TrainInfoService
-
-      //try {
       setTimeout(() => {
         this.setState({
           loading: false
         });
       }, 2500);
     }
-    //  } catch (err) {
-    //    console.log(err);
-    //    this.setState({
-    //      loading: false
-    //    });
-    //  }
 
     render() {
-      // while checking user session, show "loading" message
+      // If loading is truthy then LoadingMessage is displayed, otherwise
+      // the wrapped component is returned, in our case App
       if (this.state.loading) return LoadingMessage();
 
-      // otherwise, show the desired route (we don't have any props for the wrapped component, App, so could remove it?
-      //Fetched data goes into prop of WrappedComponent!
-      return <WrappedComponent {...this.props} />;
+      return <WrappedComponent />;
     }
   };
 }

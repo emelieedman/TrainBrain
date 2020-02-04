@@ -31,4 +31,5 @@ function App() {
   );
 }
 
+//Loading screen is wrapped around app so app gets displayed after loading: false.
 export default LoadingScreen(App);
