@@ -1,20 +1,16 @@
 import React, { Component } from "react";
-import "./LoadingScreenStyling.css";
+import styles from "./LoadingScreenStyling.module.css";
 
 function LoadingMessage() {
   return (
-    <div className="loading-screen">
-      <img
-        className="loadingscreen-logo"
-        id="trainbrainlogo"
-        src={require("./trainbrainlogo.svg")}
-        alt="Train Brain Logo."
-      />
-      <h1>
-        Destressing Your
-        <br /> Daily Commute
-      </h1>
-      <div className="loading-dot">.</div>
+    <div className={styles.wrapper}>
+      <div className={styles.text}>
+        <h1 className={styles.message}>
+          Destressing
+          <br /> your daily <br />
+          commute
+        </h1>
+      </div>
     </div>
   );
 }
@@ -33,18 +29,18 @@ function LoadingScreen(WrappedComponent) {
       //await. TrainInfoService
 
       //try {
-        setTimeout(() => {
+      setTimeout(() => {
         this.setState({
           loading: false
         });
-    }, 2500);
+      }, 2500);
     }
-      //  } catch (err) {
-      //    console.log(err);
-      //    this.setState({
-      //      loading: false
-      //    });
-      //  }
+    //  } catch (err) {
+    //    console.log(err);
+    //    this.setState({
+    //      loading: false
+    //    });
+    //  }
 
     render() {
       // while checking user session, show "loading" message

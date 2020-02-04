@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { myApiCall } from "../../services/TrainInfoService";
-import "./TrainInfoComponent.css";
+import traininfostyle from "./TrainInfoComponent.module.css";
+// import Greeter from "../Greeter/Greeter";
 
 const TrainBrainAPI = () => {
   const myData = myApiCall();
@@ -15,7 +16,6 @@ const TrainBrainAPI = () => {
     }
 
     myData.then(data => {
-
       const disruptedStation = data.prognosis.find(
         disruption => disruption.station === "Lu"
       );
@@ -29,7 +29,6 @@ const TrainBrainAPI = () => {
       let displayTrainNumber = disruptedStation ? disruptedStation.trainnr : "No train";
 
       let displayScheduled = function() {
-
         if (disruptedStation) {
           let stationArray = disruptedStation.scheduled.split("");
           return stationArray.splice(0, 5);
@@ -46,33 +45,31 @@ const TrainBrainAPI = () => {
   });
 
   return (
-    <div className="info-component">
-      <img
-        className="location-icon"
-        id="way-icon"
-        src={require("./way.svg")}
-        alt=""
-      />
-      <h1 className="travel-info">TRAVEL INFO</h1>
-      <h1 className="style-large">LUND C</h1>
-      <h3 className="style-small">NEXT TRAIN</h3>
+    <div className={traininfostyle.infoComponent}>
+      {/* <div className={traininfostyle.greeter}>
+        <Greeter />
+      </div> */}
 
-      <h4 className="style-large">{scheduled}</h4>
-      <h3 className="style-small">TRAIN NUMBER: {trainNumber}</h3>
+      <h2 className={traininfostyle.styleLarge}>LUND C</h2>
+      <h3 className={traininfostyle.styleSmall}>NEXT TRAIN</h3>
+      <h4 className={traininfostyle.styleLarge} id={traininfostyle.time}>
+        {scheduled}
+      </h4>
 
       {disruptions === "0" && accuracy === "100%" ? (
-        <div className="delay-info">
-          <p className="style-large"></p> <br></br>
-          <p className="delay-info">NO DELAYS</p>
-        </div>
+        <p className={traininfostyle.delayInfo}>NO DELAYS</p>
       ) : (
-        <div className="delay-info">
-          <p>
-            <br></br>{disruptions} min delay<br></br>
-            {accuracy} accuracy
-          </p>
-        </div>
+        <p className={traininfostyle.delayInfo}>
+          {disruptions} MIN DELAY<br></br>
+          {accuracy} ACCURACY{" "}
+        </p>
       )}
+      <h3 className={traininfostyle.styleSmallest}>TRAIN NR. {trainNumber}</h3>
+      <img
+        className={traininfostyle.waysvg}
+        src={require("../../assets/backgroundimg.svg")}
+        alt=""
+      />
     </div>
   );
 };

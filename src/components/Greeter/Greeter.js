@@ -1,5 +1,5 @@
 import React from "react";
-import "./greeter.css";
+import greeterstyle from "./greeter.module.css";
 
 const Greeter = () => {
   const date = new Date();
@@ -7,13 +7,15 @@ const Greeter = () => {
   let timeOfDay;
 
   if (hours < 12) {
-    timeOfDay = "MORNING";
+    timeOfDay = "Morning";
   } else if (hours >= 12 && hours < 17) {
-    timeOfDay = "AFTERNOON";
+    timeOfDay = "Afternoon";
+  } else if (hours >= 17 && hours < 20) {
+    timeOfDay = "Evening";
   } else {
-    timeOfDay = "NIGHT";
+    timeOfDay = "Night";
   }
-  return <h1 className="greeter-text">GOOD {timeOfDay}!</h1>;
+  return <h1 className={greeterstyle.greeterText}>Good {timeOfDay}!</h1>;
 };
 
 export default Greeter;

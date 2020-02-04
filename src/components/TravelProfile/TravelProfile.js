@@ -1,25 +1,20 @@
 import React from "react";
-import "./TravelProfile.css";
+import searchTrip from "./TravelProfile.module.css";
+import Greeter from "../Greeter/Greeter";
 
 const TravelProfile = () => {
   return (
-    <form>
-      <h1 className="headline">CREATE YOUR USER PROFILE!</h1>
-      <div className="input-text">
-        Username:<br></br>
-        <input id="username" type="text" name="username"></input>
+    <form className={searchTrip.main}>
+      <div className={searchTrip.greeter}>
+        <Greeter />
       </div>
-      <div className="input-text">
-        Password:<br></br>
-        <input type="password" name="psw"></input>
-      </div>
-      <div className="input-text">
+      <div className={searchTrip.inputText}>
         From:<br></br>
-        <input type="text" name="from" placeholder="Malmö C"></input>
+        <input type="text" name="from" placeholder="Lund C"></input>
       </div>
-      <div className="input-text">
+      <div className={searchTrip.inputText}>
         To:<br></br>
-        <input type="text" name="to" placeholder="Lund C"></input>
+        <input type="text" name="to" placeholder="Malmö C"></input>
       </div>
     </form>
   );

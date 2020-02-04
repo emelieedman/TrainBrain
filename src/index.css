@@ -1,21 +1,5 @@
+html,
 body {
   margin: 0;
-  background-color: #341a3e;
-}
-
-#submit-button {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 45px;
-  border-style: none;
-  background: #de8062;
-  border-radius: 115px;
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 28px;
-  letter-spacing: 0.1em;
+  overflow: hidden;
 }

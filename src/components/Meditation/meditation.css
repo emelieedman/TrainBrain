@@ -1,18 +1,39 @@
 .meditation-component {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 40%;
-  background-color: #997aa5;
+  grid-template-rows: 25% 40%;
+  background: linear-gradient(
+    180deg,
+    #bcdbdf 40.42% 60%,
+    rgba(212, 227, 228, 0) 110%
+  );
+
   color: white;
   font-family: "Saira", sans-serif;
   letter-spacing: 0.06em;
   line-height: 155.2%;
   width: 100vw;
-  height: 500px;
-  position: absolute;
+  height: 650px;
+  position: fixed;
   left: 0;
-  top: 80vh;
+  top: 75vh;
   border-top-left-radius: 115px;
+}
+
+.is-animated {
+  animation-name: animationStart;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+
+.reverse-animation {
+  animation-name: animationReverse;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: ease;
 }
 
 #mandala {
@@ -38,23 +59,43 @@
   height: 100px;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-left: -50px;
   transform-origin: 50% 50%;
   animation-duration: 6s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-.text {
+.meditation-text {
   margin-top: 39px;
   font-size: 8px;
   letter-spacing: 0.5em;
   font-weight: 200;
   display: flex;
   justify-content: center;
+}
+
+@keyframes animationStart {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-67%);
+  }
+}
+
+@keyframes animationReverse {
+  0% {
+    transform: translateY(-67%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes breatheIn {
@@ -64,6 +105,6 @@
 
   100% {
     transform: scale(2);
-    background-color: #341a3e;
+    background: #9cbbc0;
   }
 }

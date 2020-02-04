@@ -1,0 +1,106 @@
+.infoComponent {
+  display: inline-block;
+  font-family: "Saira", sans-serif;
+
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30% 15% 5% 15% 5% ;
+  height: 100vh;
+  width: 100vw;
+  background-position: 30% 20%;
+  background-repeat: no-repeat;
+  background-size: 140%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(248, 191, 191, 0.247) 0%,
+      #00000067 100%
+    ),
+    url(../../assets/shallow-focus-photography-of-railway-during-sunset-892541.jpg);
+}
+
+/* .greeter {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  color: white;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-column: span 2;
+} */
+
+.waysvg {
+  width: 200vw;
+  position: absolute;
+  top: 10%;
+  left: -60%;
+}
+
+.styleSmall {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-column: span 2;
+  margin: 0px;
+  color: #40abb1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.46em;
+}
+.styleSmallest {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-column: span 2;
+  margin: 0px;
+  color: #40abb1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0.46em;
+}
+
+.styleLarge {
+  grid-column: span 2;
+  width: 100vw;
+  color: white;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: 0.19em;
+  margin: 0px;
+}
+
+h2 {
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.delayInfo {
+  justify-self: center;
+  align-self: center;
+  grid-column: span 2;
+  margin: 0px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.19em;
+
+  color: #40abb1;
+}
+
+#time {
+  color: #94faff;
+  justify-self: center;
+  align-self: center;
+}
