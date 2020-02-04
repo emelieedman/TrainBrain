@@ -7,6 +7,7 @@ const TrainBrainAPI = () => {
   const [disruptions, onChangeDisruptions] = useState();
   const [accuracy, onChangeAccuracy] = useState();
   const [scheduled, onChangeScheduled] = useState();
+  const [trainNumber, onChangeTrainNumber] = useState();
 
   useEffect(() => {
     if (disruptions) {
@@ -25,6 +26,8 @@ const TrainBrainAPI = () => {
         ? disruptedStation.predicted_delay_accuracy
         : 0;
 
+      let displayTrainNumber = disruptedStation ? disruptedStation.trainnr : "No train";
+
       let displayScheduled = function() {
 
         if (disruptedStation) {
@@ -38,6 +41,7 @@ const TrainBrainAPI = () => {
       onChangeDisruptions(displayDelay);
       onChangeAccuracy(displayAccuracy);
       onChangeScheduled(displayScheduled);
+      onChangeTrainNumber(displayTrainNumber);
     });
   });
 
@@ -52,7 +56,9 @@ const TrainBrainAPI = () => {
       <h1 className="travel-info">TRAVEL INFO</h1>
       <h1 className="style-large">LUND C</h1>
       <h3 className="style-small">NEXT TRAIN</h3>
+
       <h4 className="style-large">{scheduled}</h4>
+      <h3 className="style-small">TRAIN NUMBER: {trainNumber}</h3>
 
       {disruptions === "0" && accuracy === "100%" ? (
         <div className="delay-info">
