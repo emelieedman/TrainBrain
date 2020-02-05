@@ -17,7 +17,7 @@ function App() {
       {!isLoggedIn ? (
         <div>
           <button id={buttonStyle.submitButton} onClick={() => submitButton()}>
-            SUBMIT
+            GO
           </button>
           <TravelProfile />
         </div>
