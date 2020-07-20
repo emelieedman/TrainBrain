@@ -2,7 +2,7 @@
 
 This project was a group project we did at Hyper Island in collaboration with TrainBrain, a company that through AI predicts train delays. Unfortunately we no longer have access to the API, that’s why no numbers are displayed.
 
-The client was really open and wanted us to be creative. Through our app we wanted to destress and to create mindfulness while the commuter was waiting for the train to arrive. The solution we came up with was to combine the information of delays with a meditation application. 
+Through our app we want to destress and to create mindfulness while the commuter is waiting for the train to arrive. In our app we combine the information of delays with a meditation application. 
 
 
 ![Spring 2020 assessment Emelie Edman(8)](https://user-images.githubusercontent.com/55784269/87703126-9f510700-c79a-11ea-9583-92ce6592ab6c.png)
