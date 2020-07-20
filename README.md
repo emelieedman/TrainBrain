@@ -6,7 +6,7 @@ The client was really open and wanted us to be creative. Through our app we want
 
 
 ![Spring 2020 assessment Emelie Edman(8)](https://user-images.githubusercontent.com/55784269/87703126-9f510700-c79a-11ea-9583-92ce6592ab6c.png)
-![Spring 2020 assessment Emelie Edman(9)](https://user-images.githubusercontent.com/55784269/87703137-a2e48e00-c79a-11ea-971e-8712a150d4a1.png)
+![Spring 2020 assessment Emelie Edman(13)](https://user-images.githubusercontent.com/55784269/87941239-19370800-ca9b-11ea-80fc-3f11d831c205.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
